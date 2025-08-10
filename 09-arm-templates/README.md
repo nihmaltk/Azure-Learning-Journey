@@ -100,15 +100,11 @@ az deployment group create \
   --parameters vmName=myVM
 ```
 
-`az deployment group create` - Deploys resources at the resource group level.
-
-`--name` - Name of the deployment.
-
-`--resource-group` - Target resource group.
-
-`--template-file` - Path to ARM template file.
-
-`--parameters` - Values for template parameters.
+* `az deployment group create` - Deploys resources at the resource group level.
+* `--name` - Name of the deployment.
+* `--resource-group` - Target resource group.
+* `--template-file` - Path to ARM template file.* 
+* `--parameters` - Values for template parameters.
 
 ## Summary
 

@@ -40,9 +40,9 @@ az group create --name MyResourceGroup --location eastus
 
 **Explanation:**
 
-* `az group create` → Command to create a new resource group
-* `--name MyResourceGroup` → Name for your group 
-* `--location eastus` → Azure region for the group
+* `az group create` - Command to create a new resource group
+* `--name MyResourceGroup` - Name for your group 
+* `--location eastus` - Azure region for the group
 
 You can use **an existing resource group** instead of creating a new one. Just skip this step and use the existing group's name in the next steps.
 
@@ -58,30 +58,21 @@ az vm create \
   --admin-username <ADMIN_USERNAME> \
   --generate-ssh-keys
   --output json \             
-  --verbose      
+  --verbose  
   ```
 
-**Explantion**
+**Explanation**
 
-`az vm create` - Create a new Virtual Machine in Azure.
-
-`--resource-group azureCLIResourceGroup` - Specifies the resource group where the VM should be created.
-
-`--name azureCLIVM` - Gives the name to your virtual machine.
-
-`--image <OS_IMAGE_NAME>` - Defines the operating system image for the VM.
-
-`--vnet-name <VNET_NAME>` - Specifies the Virtual Network (VNet) in which the VM will be placed.
-
-`--subnet <SUBNET_NAME>` - Specifies the subnet within the VNet to attach the VM's network interface to.
-
-`--admin-username <ADMIN_USERNAME>` - VM's username.
-
-`--generate-ssh-keys` - If you don’t have SSH keys, Azure will generate and store them in your local PC . If keys already exist, it uses them.
-
-`--ouput json` -  Outputs the result in JSON format (structured and machine-readable)
-
-`--verbose` - Displays detailed progress messages (step-by-step execution)
+* `az vm create` - Create a new Virtual Machine in Azure.
+* `--resource-group azureCLIResourceGroup` - Specifies the resource group where the VM should be created.
+* `--name azureCLIVM` - Gives the name to your virtual machine.
+* `--image <OS_IMAGE_NAME>` - Defines the operating system image for the VM.
+* `--vnet-name <VNET_NAME>` - Specifies the Virtual Network (VNet) in which the VM will be placed.
+* `--subnet <SUBNET_NAME>` - Specifies the subnet within the VNet to attach the VM's network interface to.
+* `--admin-username <ADMIN_USERNAME>` - VM's username.
+* `--generate-ssh-keys` - If you don’t have SSH keys, Azure will generate and store them in your local PC . If keys already exist, it uses them.
+* `--ouput json` -  Outputs the result in JSON format (structured and machine-readable)
+* `--verbose` - Displays detailed progress messages (step-by-step execution)
 
 ## Summary
 
